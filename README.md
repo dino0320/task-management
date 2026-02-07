@@ -1,3 +1,7 @@
+🚧 This project is currently under development.
+
+The goal of this project is to build a simple task management service to demonstrate backend design using NestJS.
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
