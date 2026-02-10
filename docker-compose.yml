@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./docker/web/Dockerfile
+    volumes:
+      - .:/srv/task-management.com
+    ports:
+      - "8080:80"
+      - "5173:5173"
+    command: bash -c "chmod 755 /srv/task-management.com/docker/web/start.sh &&
+             /srv/task-management.com/docker/web/start.sh"
