@@ -21,7 +21,7 @@ import { UserModule } from './user/user.module';
         username: configService.get<string>('database.username'),
         password: configService.get<string>('database.password'),
         database: configService.get<string>('database.database'),
-        synchronize: false,
+        synchronize: configService.get<boolean>('database.synchronize'),
         autoLoadEntities: true,
       }),
       inject: [ConfigService],
