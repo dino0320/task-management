@@ -3,6 +3,9 @@ services:
     build:
       context: .
       dockerfile: ./docker/web/Dockerfile
+    environment:
+      APP_ENV: local
+      IS_NPM_BUILT: ${IS_NPM_BUILT:-0}
     volumes:
       - .:/srv/task-management.com
     ports:
