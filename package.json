@@ -72,5 +72,10 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "overrides": {
+    "ajv": "^8.17.1",
+    "minimatch": "^10.2.1",
+    "glob": "^10.5.0"
   }
 }
