@@ -17,6 +17,8 @@ if [ $IS_NPM_BUILT -eq 1 ]; then
 fi
 fi
 
+npx typeorm-ts-node-commonjs migration:run -d "$PROJECT_PATH/src/app-data-source.ts"
+
 # Start NGINX
 # By using -g "daemon off;", NGINX runs in the foreground, preventing the container from exiting automatically
 nginx -g "daemon off;"
